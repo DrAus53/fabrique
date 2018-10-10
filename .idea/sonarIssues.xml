@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/Character.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/Element.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/Item.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/Monkey.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/MonkeyFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/MonkeyMoveErratic.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/Treasure.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/Arbre.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/EEtatFeuille.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/EEtatFruit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/Feuillus.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/Fruités.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/nopattern/Arbre.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
