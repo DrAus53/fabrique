@@ -1,5 +1,5 @@
 package fr.eseo.greenit.nopattern;
 
-public class Arbre {
+public abstract class Arbre {
 
 }
