@@ -23,15 +23,15 @@ public abstract class Createur {
 	}
 
 	public Conifere creerConifere() {
-		return new Conifere();
+		return new Conifere(null, 0, 0, null, null);
 	}
 
 	public Feuillus creerFeuillu() {
-		return new Feuillus();
+		return new Feuillus(null, 0, 0, 0, null);
 	}
 
 	public Fruites creerFruitier() {
-		return new Fruites();
+		return new Fruites(null, 0, 0, 0, null, null, 0, 0);
 	}
 	
 }
