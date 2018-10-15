@@ -1,16 +1,37 @@
 package fr.eseo.greenit.fabrique.controleur;
 
-import fr.eseo.greenit.fabrique.Arbre;
+import fr.eseo.greenit.fabrique.*;
 
 public abstract class Createur {
 
-  public abstract Arbre creerArbre(String nomArbre);
+	public Arbre creerArbre(Class<? extends Arbre> classe) {
 
-  public static void afficherArbre (String type) {
-    Createur createur;
+		String nomClasse = classe.getName();
+		Arbre arbre = null;
+		switch (nomClasse) {
+		case "Conifere":
+			arbre = creerConifere();
+			break;
+		case "Feuillus":
+			arbre = creerFeuillu();
+			break;
+		case "Fruites":
+			arbre = creerFruitier();
+			break;
+		}
+		return arbre;
+	}
 
-    if("bouleau".equals(type)) {
+	public Conifere creerConifere() {
+		return new Conifere();
+	}
 
-    }
-  }
+	public Feuillus creerFeuillu() {
+		return new Feuillus();
+	}
+
+	public Fruites creerFruitier() {
+		return new Fruites();
+	}
+	
 }
