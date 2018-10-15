@@ -1,8 +1,8 @@
 package fr.eseo.greenit.fabrique;
 
-public class Fruités extends Feuillus {
+public class Fruites extends Feuillus {
 
-  public Fruités(String genre, int age, int hauteur, int nombreFeuilles, EEtatFeuille etatFeuilles, EEtatFruit etatFruits, int nombreFruits, int tailleFruits) {
+  public Fruites(String genre, int age, int hauteur, int nombreFeuilles, EEtatFeuille etatFeuilles, EEtatFruit etatFruits, int nombreFruits, int tailleFruits) {
     super(genre, age, hauteur, nombreFeuilles, etatFeuilles);
     this.etatFruits = etatFruits;
     this.nombreFruits = nombreFruits;
