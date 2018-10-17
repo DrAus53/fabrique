@@ -6,8 +6,8 @@ import fr.eseo.greenit.fabrique.model.Arbre;
 
 public class VueConifere extends VueArbre{
 
-	public VueConifere(Arbre arbre) {
-		super(arbre);
+	public VueConifere(Arbre arbre, int x, int y) {
+		super(arbre, x, y);
 		// TODO Auto-generated constructor stub
 	}
 
