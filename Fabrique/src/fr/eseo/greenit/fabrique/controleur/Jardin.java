@@ -6,6 +6,14 @@ import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 
+import fr.eseo.greenit.fabrique.model.Arbre;
+import fr.eseo.greenit.fabrique.model.ArbreConifere;
+import fr.eseo.greenit.fabrique.model.ArbreFruitier;
+import fr.eseo.greenit.fabrique.model.EEtatFeuille;
+import fr.eseo.greenit.fabrique.model.EEtatFruit;
+import fr.eseo.greenit.fabrique.vue.VueArbre;
+import fr.eseo.greenit.fabrique.vue.VueFruitier;
+
 
 
 public class Jardin extends JFrame {
@@ -35,8 +43,9 @@ public class Jardin extends JFrame {
 		return fenetreJardin;
 	}
 
-	public static void main(String[] args) {
-		Jardin jardin = new Jardin();
+	public static void main(String[] args) {		
+		Jardin.getInstance().getPanneauJardin().ajouterVueArbre(creerArbre(ArbreConifere.class));
 	}
 
 }
+;
