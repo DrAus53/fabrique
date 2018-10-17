@@ -1,69 +1,43 @@
 package fr.eseo.greenit.fabrique.controleur;
 
-import java.awt.CheckboxGroup;
+
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextArea;
 
-import fr.eseo.greenit.fabrique.controleur.action.ActionValider;
 
-public class Jardin extends JFrame  {
-	JComboBox arbre1;
-	JTextArea arbre2;
-	JComboBox arbre3;
-	public Jardin(){
-		buildJPanel();//On initialise notre fenêtre
+
+public class Jardin extends JFrame {
+	private static Jardin fenetreJardin;
+	private PanneauJardin panneauJardin;
+
+	public PanneauJardin getPanneauJardin() {
+		return panneauJardin;
 	}
 
-	public JFrame buildJPanel(){
+	public Jardin() {
+		Jardin.fenetreJardin = this;
+		panneauJardin = new PanneauJardin(300, 300);
+		add(panneauJardin);
 		JFrame.setDefaultLookAndFeelDecorated(true);
-	    JFrame frame = new JFrame("JCheckBox Test");
-	    frame.setPreferredSize(new Dimension(500,500));
-	    frame.setLayout(new FlowLayout());
-	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	   
-	    arbre1 = new JComboBox();
-	    arbre1.setPreferredSize(new Dimension(100,30));
-	    
-	    arbre1.addItem("Test");
-	    
-	    arbre2 = new JTextArea("Taille");
-	    arbre2.setPreferredSize(new Dimension(100,30));
-	    
-	    arbre3 = new JComboBox();
-	    arbre3.setPreferredSize(new Dimension(100,30));
-	    JButton boutonvalider = new JButton("Valider");
-	    
-	    boutonvalider.addActionListener(new ActionValider());
-	    
-	    frame.add(arbre1);
-	    frame.add(arbre2);
-	    frame.add(arbre3);
-	    frame.add(boutonvalider);
-	    frame.pack();
-	    
-	    
-	    frame.setVisible(true);
-	    return frame;
-	    
-		}
-		
-	    
-	    
-	    
-	    public static void main(String [] args) {
-	    	Jardin jardin = new Jardin();
-	    }
+		JFrame frame = new JFrame("JCheckBox Test");
+		this.setPreferredSize(new Dimension(500, 500));
+		this.setLayout(new FlowLayout());
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
 
-	
+	}
+
+	public static Jardin getInstance() {
+		if (fenetreJardin == null) {
+			fenetreJardin = new Jardin();
+		}
+		return fenetreJardin;
+	}
+
+	public static void main(String[] args) {
+		Jardin jardin = new Jardin();
+	}
+
 }
