@@ -1,9 +1,9 @@
 package fr.eseo.greenit.fabrique.controleur;
 
 import fr.eseo.greenit.fabrique.model.Arbre;
-import fr.eseo.greenit.fabrique.model.Conifere;
+import fr.eseo.greenit.fabrique.model.ArbreConifere;
 import fr.eseo.greenit.fabrique.model.Feuillus;
-import fr.eseo.greenit.fabrique.model.Fruites;
+import fr.eseo.greenit.fabrique.model.ArbreFruitier;
 
 public abstract class Createur {
 
@@ -25,16 +25,16 @@ public abstract class Createur {
 		return arbre;
 	}
 
-	public Conifere creerConifere() {
-		return new Conifere(null, 0, 0, null, null);
+	public ArbreConifere creerConifere() {
+		return new ArbreConifere(null, 0, 0, null);
 	}
 
 	public Feuillus creerFeuillu() {
 		return new Feuillus(null, 0, 0, 0, null);
 	}
 
-	public Fruites creerFruitier() {
-		return new Fruites(null, 0, 0, 0, null, null, 0, 0);
+	public ArbreFruitier creerFruitier() {
+		return new ArbreFruitier(null, 0, 0, 0, null, null, 0, 0);
 	}
 	
 }

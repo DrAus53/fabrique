@@ -1,17 +1,15 @@
 package fr.eseo.greenit.fabrique.model;
 
-public class Conifere extends Arbre {
+public class ArbreConifere extends Arbre {
 
 	private String genre;
 	private int age;
 	private int hauteur;
-	private EEtatPersist feuille;
 	private EEtatPousse croissance;
 	
 
-	public Conifere(String genre, int age, int hauteur, EEtatPersist feuille, EEtatPousse croissance) {
+	public ArbreConifere(String genre, int age, int hauteur, EEtatPousse croissance) {
 		super(genre, age, hauteur);
-		this.feuille = feuille;
 		this.croissance = croissance;
 	}
 
@@ -37,14 +35,6 @@ public class Conifere extends Arbre {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-
-	public EEtatPersist getFeuille() {
-		return feuille;
-	}
-
-	public void setFeuille(EEtatPersist feuille) {
-		this.feuille = feuille;
 	}
 	
 	public EEtatPousse getCroissance() {
