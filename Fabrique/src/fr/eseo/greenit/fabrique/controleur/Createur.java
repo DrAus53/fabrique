@@ -30,11 +30,11 @@ public abstract class Createur {
 	}
 
 	public ArbreFeuillus creerFeuillu() {
-		return new ArbreFeuillus(null, 0, 0, 0, null);
+		return new ArbreFeuillus(null, 0, 0, null);
 	}
 
 	public ArbreFruitier creerFruitier() {
-		return new ArbreFruitier(null, 0, 0, 0, null, null, 0, 0);
+		return new ArbreFruitier(null, 0, 0, null, null);
 	}
 	
 }
