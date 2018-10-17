@@ -1,6 +1,9 @@
 package fr.eseo.greenit.fabrique.controleur;
 
-import fr.eseo.greenit.fabrique.*;
+import fr.eseo.greenit.fabrique.model.Arbre;
+import fr.eseo.greenit.fabrique.model.Conifere;
+import fr.eseo.greenit.fabrique.model.Feuillus;
+import fr.eseo.greenit.fabrique.model.Fruites;
 
 public abstract class Createur {
 

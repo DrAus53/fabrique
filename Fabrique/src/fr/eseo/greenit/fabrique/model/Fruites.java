@@ -1,4 +1,4 @@
-package fr.eseo.greenit.fabrique;
+package fr.eseo.greenit.fabrique.model;
 
 public class Fruites extends Feuillus {
 
