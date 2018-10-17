@@ -20,13 +20,12 @@ public class Jardin extends JFrame {
 		Jardin.fenetreJardin = this;
 		panneauJardin = new PanneauJardin(300, 300);
 		add(panneauJardin);
-		JFrame.setDefaultLookAndFeelDecorated(true);
-		JFrame frame = new JFrame("JCheckBox Test");
 		this.setPreferredSize(new Dimension(500, 500));
 		this.setLayout(new FlowLayout());
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
-
+		this.setLocationRelativeTo(null);
+		
 	}
 
 	public static Jardin getInstance() {
