@@ -8,7 +8,7 @@ public class ArbreConifere extends Arbre {
 	private EEtatPousse croissance;
 	
 
-	public ArbreConifere(String genre, int age, int hauteur, EEtatPousse croissance) {
+	public ArbreConifere(EGenreArbre genre, int age, int hauteur, EEtatPousse croissance) {
 		super(genre, age, hauteur);
 		this.croissance = croissance;
 	}

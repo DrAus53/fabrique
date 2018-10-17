@@ -4,7 +4,7 @@ public class ArbreFruitier extends ArbreFeuillus {
 
   private EEtatFruit etatFruits;
 
-  public ArbreFruitier(String genre, int age, int hauteur, EEtatFeuille etatFeuilles, EEtatFruit etatFruits) {
+  public ArbreFruitier(EGenreArbre genre, int age, int hauteur, EEtatFeuille etatFeuilles, EEtatFruit etatFruits) {
     super(genre, age, hauteur, etatFeuilles);
     this.etatFruits = etatFruits;
   }
