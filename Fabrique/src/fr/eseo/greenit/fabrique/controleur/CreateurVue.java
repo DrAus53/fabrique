@@ -13,10 +13,10 @@ public abstract class CreateurVue {
 		VueArbre vueArbre = null;
 		switch (nomClasse) {
 		case "VueConifere":
-			vueArbre = creerConifere();
+			vueArbre = creerConifere(arbre);
 			break;
 		case "VueFeuillus":
-			vueArbre = creerFeuillu();
+			vueArbre = creerFeuillu(arbre);
 			break;
 		case "VueFruitier":
 			vueArbre = creerFruitier();
