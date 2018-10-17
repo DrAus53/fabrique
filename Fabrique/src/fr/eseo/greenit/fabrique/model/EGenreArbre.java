@@ -1,5 +1,4 @@
 package fr.eseo.greenit.fabrique.model;
-
 public enum EGenreArbre {
 	CYPRES("Cypres", "Conifere"), SAPIN("Sapin", "Conifere"), CEDRE("Cedre", "Conifere"),
 	SEQUOIA("Sequoia", "Conifere");
