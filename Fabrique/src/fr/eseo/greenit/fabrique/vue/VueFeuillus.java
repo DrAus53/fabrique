@@ -29,7 +29,15 @@ public class VueFeuillus extends VueArbre {
       couleurFeuilles = Color.BLACK;
     }
 
+    Color couleurTronc = Color.BLACK;
+    if (arbreFeuillus.getEtatFeuilles().equals(EEtatFeuille.VERT)) {
+    } else {
+      couleurTronc = Color.BLACK;
+    }
+
     g2D.setColor(couleurFeuilles);
-    g2D.fillRect(this.getX(),this.getY(), hauteur, largeur);
+    g2D.fillRect(this.getX() - largeur/2, this.getY() + hauteur/2, largeur, largeur);
+    g2D.setColor(couleurTronc);
+    g2D.fillRect(this.getX() - largeur/4, this.getY() + hauteur/2 - largeur, largeur/2, hauteur-largeur );
   };
 }
