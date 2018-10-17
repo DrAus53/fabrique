@@ -15,6 +15,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
+import fr.eseo.greenit.fabrique.controleur.action.ActionValider;
+
 public class Jardin extends JFrame  {
 	JComboBox arbre1;
 	JTextArea arbre2;

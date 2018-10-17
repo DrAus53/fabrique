@@ -1,13 +1,13 @@
 package fr.eseo.greenit.fabrique.model;
 
-public enum EGenreConifere {
+public enum EGenreArbre {
 	CYPRES("Cypres", "Conifere"), SAPIN("Sapin", "Conifere"), CEDRE("Cedre", "Conifere"),
 	SEQUOIA("Sequoia", "Conifere");
 
 	private String name = "";
 	private String arbre = "";
 
-	EGenreConifere(String name, String arbre) {
+	EGenreArbre(String name, String arbre) {
 		this.name = name;
 		this.arbre = arbre;
 	}
