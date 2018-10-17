@@ -1,8 +1,8 @@
 package fr.eseo.greenit.fabrique.model;
 
-public class Feuillus extends Arbre {
+public class ArbreFeuillus extends Arbre {
 
-  public Feuillus(String genre, int age, int hauteur, int nombreFeuilles, EEtatFeuille etatFeuilles) {
+  public ArbreFeuillus(String genre, int age, int hauteur, EEtatFeuille etatFeuilles) {
     super(genre, age, hauteur);
     this.etatFeuilles = etatFeuilles;
   }

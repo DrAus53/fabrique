@@ -1,16 +1,12 @@
 package fr.eseo.greenit.fabrique.model;
 
-public class ArbreFruitier extends Feuillus {
+public class ArbreFruitier extends ArbreFeuillus {
 
   private EEtatFruit etatFruits;
-  private int nombreFruits;
-  private int tailleFruits;
 
-  public ArbreFruitier(String genre, int age, int hauteur, int nombreFeuilles, EEtatFeuille etatFeuilles, EEtatFruit etatFruits, int nombreFruits, int tailleFruits) {
-    super(genre, age, hauteur, nombreFeuilles, etatFeuilles);
+  public ArbreFruitier(String genre, int age, int hauteur, EEtatFeuille etatFeuilles, EEtatFruit etatFruits) {
+    super(genre, age, hauteur, etatFeuilles);
     this.etatFruits = etatFruits;
-    this.nombreFruits = nombreFruits;
-    this.tailleFruits = tailleFruits;
   }
 
   public EEtatFruit getEtatFruits() {
@@ -21,19 +17,4 @@ public class ArbreFruitier extends Feuillus {
     this.etatFruits = etatFruits;
   }
 
-  public int getNombreFruits() {
-    return nombreFruits;
-  }
-
-  public void setNombreFruits(int nombreFruits) {
-    this.nombreFruits = nombreFruits;
-  }
-
-  public int getTailleFruits() {
-    return tailleFruits;
-  }
-
-  public void setTailleFruits(int tailleFruits) {
-    this.tailleFruits = tailleFruits;
-  }
 }
