@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../COOL_QL_Monkeys/Monkey/src/fr/eseo/cool/modele/Character.java">
           <value>
             <set />
@@ -64,6 +69,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/Fruités.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/model/Feuillus.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/vue/VueFeuillu.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Fabrique/src/fr/eseo/greenit/fabrique/vue/VueFeuillus.java">
           <value>
             <set />
           </value>
