@@ -4,8 +4,12 @@ import fr.eseo.greenit.fabrique.model.Arbre;
 import fr.eseo.greenit.fabrique.model.ArbreConifere;
 import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
 import fr.eseo.greenit.fabrique.model.ArbreFruitier;
+import fr.eseo.greenit.fabrique.vue.VueArbre;
+import fr.eseo.greenit.fabrique.vue.VueConifere;
+import fr.eseo.greenit.fabrique.vue.VueFeuillus;
+import fr.eseo.greenit.fabrique.vue.VueFruitier;
 
-public abstract class CreateurVue {
+public class CreateurVue {
 
 	public VueArbre creerVue(Class<? extends VueArbre> classe,Arbre arbre) {
 
@@ -19,22 +23,22 @@ public abstract class CreateurVue {
 			vueArbre = creerFeuillu(arbre);
 			break;
 		case "VueFruitier":
-			vueArbre = creerFruitier();
+			vueArbre = creerFruitier(arbre);
 			break;
 		}
 		return vueArbre;
 	}
 
-	public VueConifere creerConifere() {
-		return new VueConifere(null, 0, 0, null);
+	public VueConifere creerConifere(Arbre arbre) {
+		return new VueConifere(arbre, 0, 0);
 	}
 
-	public VueFeuillus creerFeuillu() {
-		return new ArbreFeuillus(null, 0, 0, null);
+	public VueFeuillus creerFeuillu(Arbre arbre) {
+		return new VueFeuillus(arbre, 50,50);
 	}
 
-	public VueFruitier creerFruitier() {
-		return new ArbreFruitier(null, 0, 0, null, null);
+	public VueFruitier creerFruitier(Arbre arbre) {
+		return new VueFruitier(arbre, 100, 100);
 	}
 	
 }

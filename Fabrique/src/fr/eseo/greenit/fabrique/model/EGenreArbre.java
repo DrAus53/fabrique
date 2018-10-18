@@ -1,7 +1,7 @@
 package fr.eseo.greenit.fabrique.model;
 public enum EGenreArbre {
 	CYPRES("Cypres", "Conifere"), SAPIN("Sapin", "Conifere"), CEDRE("Cedre", "Conifere"),
-	SEQUOIA("Sequoia", "Conifere"), COCOTIER("Cocotier","Fruitier"), FEUILLUS("Chene","Feuillus");
+	SEQUOIA("Sequoia", "Conifere"), COCOTIER("Cocotier","Fruitier"), CHENE("Chene","Feuillus");
 
 	private String name = "";
 	private String arbre = "";
