@@ -18,8 +18,6 @@ import fr.eseo.greenit.fabrique.vue.VueConifere;
 import fr.eseo.greenit.fabrique.vue.VueFeuillus;
 import fr.eseo.greenit.fabrique.vue.VueFruitier;
 
-
-
 public class Jardin extends JFrame {
 	private static Jardin fenetreJardin;
 	private PanneauJardin panneauJardin;

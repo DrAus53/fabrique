@@ -8,12 +8,13 @@ import java.util.List;
 
 import javax.swing.JPanel;
 
-import fr.eseo.greenit.*;
-import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
-import fr.eseo.greenit.fabrique.model.EEtatFeuille;
-import fr.eseo.greenit.fabrique.model.EGenreArbre;
-import fr.eseo.greenit.fabrique.vue.VueArbre;
-import fr.eseo.greenit.fabrique.vue.VueFeuillus;
+import src.fr.eseo.greenit.nopattern.model.ArbreConifere;
+import src.fr.eseo.greenit.nopattern.model.ArbreFeuillus;
+import src.fr.eseo.greenit.nopattern.model.EEtatFeuille;
+import src.fr.eseo.greenit.nopattern.model.EEtatPousse;
+import src.fr.eseo.greenit.nopattern.model.EGenreArbre;
+import src.fr.eseo.greenit.nopattern.vue.VueConifere;
+import src.fr.eseo.greenit.nopattern.vue.VueFeuillus;
 
 
 public class PanneauJardin extends JPanel{
@@ -21,33 +22,25 @@ public class PanneauJardin extends JPanel{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private List<VueArbre> vueArbres = new ArrayList<VueArbre>();
+	
 
 	
 	public PanneauJardin(int largeur, int hauteur){
 		this.setPreferredSize(new Dimension(largeur,hauteur));
-	}
-
-	public java.util.List<VueArbre> getVueArbre(){
-		return this.vueArbres;
-	}
-	
-	
-	public void ajouterVueArbre(VueArbre vueArbre){
-		this.vueArbres.add(vueArbre);
-		this.repaint(); 
-	}
-	
+	}	
 
 	public void paintComponent(Graphics g){
 		
 		super.paintComponent(g);
 		Graphics2D g2D = (Graphics2D)g.create();
-		for(int i=0;i<1000;i++) {
+		for(int i=0;i<100;i++) {
 		VueFeuillus f = new VueFeuillus(new ArbreFeuillus(EGenreArbre.CHENE,i*10+50,i*10+50,EEtatFeuille.VERT),50,50);
 		f.affiche(g2D);
-		}
-		
+		}	
+		for(int i=0;i<100;i++) {
+			VueConifere f = new VueConifere(new ArbreConifere(EGenreArbre.CHENE,i*10+50,i*10+50,EEtatPousse.BUISSON,EEtatFeuille.VERT),50,50);
+			f.affiche(g2D);
+			}
 		g2D.dispose();
 	}
 	

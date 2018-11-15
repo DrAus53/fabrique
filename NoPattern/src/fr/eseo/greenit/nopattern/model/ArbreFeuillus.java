@@ -21,4 +21,28 @@ public class ArbreFeuillus {
   public void setEtatFeuilles(EEtatFeuille etatFeuilles) {
     this.etatFeuilles = etatFeuilles;
   }
+
+public EGenreArbre getGenre() {
+	return genre;
+}
+
+public void setGenre(EGenreArbre genre) {
+	this.genre = genre;
+}
+
+public int getAge() {
+	return age;
+}
+
+public void setAge(int age) {
+	this.age = age;
+}
+
+public int getHauteur() {
+	return hauteur;
+}
+
+public void setHauteur(int hauteur) {
+	this.hauteur = hauteur;
+}
 }

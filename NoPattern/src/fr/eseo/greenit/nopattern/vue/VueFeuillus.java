@@ -1,22 +1,29 @@
 package src.fr.eseo.greenit.nopattern.vue;
 
-import fr.eseo.greenit.fabrique.model.Arbre;
-import fr.eseo.greenit.fabrique.model.EEtatFeuille;
-import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
+
 
 import java.awt.*;
 
-public class VueFeuillus extends VueArbre {
+import src.fr.eseo.greenit.nopattern.model.ArbreFeuillus;
+import src.fr.eseo.greenit.nopattern.model.EEtatFeuille;
 
-  public VueFeuillus(Arbre arbre, int x, int y) {
-    super(arbre, x, y);
+public class VueFeuillus {
+	ArbreFeuillus arbreFeuillus;
+	int x;
+	int y;
+	int largeur;
+	int hauteur;
+  public VueFeuillus(src.fr.eseo.greenit.nopattern.model.ArbreFeuillus arbreFeuillus, int x, int y) {
+    this.arbreFeuillus=arbreFeuillus;
+    this.x=x;
+    this.y=y;
+    this.largeur=arbreFeuillus.getAge();
+    this.hauteur=arbreFeuillus.getHauteur();
   }
 
   public void affiche(Graphics2D g2D) {
-    ArbreFeuillus arbreFeuillus = (ArbreFeuillus) getArbre();
     //on récupere les attributs
-    int largeur = arbreFeuillus.getAge();
-    int hauteur = arbreFeuillus.getHauteur();
+    
 
     Color couleurFeuilles;
     if (arbreFeuillus.getEtatFeuilles().equals(EEtatFeuille.VERT)) {
@@ -36,8 +43,8 @@ public class VueFeuillus extends VueArbre {
     }
 
     g2D.setColor(couleurFeuilles);
-    g2D.fillRect(this.getX() - largeur/2, this.getY() + hauteur/2, largeur, largeur);
+    g2D.fillRect(x - largeur/2, y + hauteur/2, largeur, largeur);
     g2D.setColor(couleurTronc);
-    g2D.fillRect(this.getX() - largeur/4, this.getY() + hauteur/2 - largeur, largeur/2, hauteur-largeur );
+    g2D.fillRect(x - largeur/4,y + hauteur/2 - largeur, largeur/2, hauteur-largeur );
   };
 }
