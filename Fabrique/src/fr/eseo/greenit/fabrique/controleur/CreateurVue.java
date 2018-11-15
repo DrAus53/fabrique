@@ -13,7 +13,7 @@ public class CreateurVue {
 
 	public VueArbre creerVue(Class<? extends VueArbre> classe,Arbre arbre) {
 
-		String nomClasse = classe.getName();
+		String nomClasse = classe.getSimpleName();
 		VueArbre vueArbre = null;
 		switch (nomClasse) {
 		case "VueConifere":

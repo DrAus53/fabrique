@@ -29,7 +29,6 @@ public class PanneauJardin extends JPanel{
 	}
 	
 	
-	
 	public void ajouterVueArbre(VueArbre vueArbre){
 		this.vueArbres.add(vueArbre);
 		this.repaint(); 
@@ -40,6 +39,7 @@ public class PanneauJardin extends JPanel{
 		
 		super.paintComponent(g);
 		Graphics2D g2D = (Graphics2D)g.create();
+		
 		for(VueArbre i : this.vueArbres){
 			if (i != null){
 				i.affiche(g2D);	

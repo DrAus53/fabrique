@@ -4,22 +4,24 @@ import fr.eseo.greenit.fabrique.model.Arbre;
 import fr.eseo.greenit.fabrique.model.ArbreConifere;
 import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
 import fr.eseo.greenit.fabrique.model.ArbreFruitier;
+import fr.eseo.greenit.fabrique.model.EEtatFeuille;
 import fr.eseo.greenit.fabrique.model.EGenreArbre;
 
 public class Createur {
 
 	public Arbre creerArbre(Class<? extends Arbre> classe) {
 
-		String nomClasse = classe.getName();
+		String nomClasse = classe.getSimpleName();
 		Arbre arbre = null;
+		System.out.println("he"+nomClasse);
 		switch (nomClasse) {
-		case "Conifere":
+		case "ArbreConifere":
 			arbre = creerConifere();
 			break;
-		case "Feuillus":
+		case "ArbreFeuillus":
 			arbre = creerFeuillu();
 			break;
-		case "Fruites":
+		case "ArbreFruitier":
 			arbre = creerFruitier();
 			break;
 		}
@@ -31,7 +33,7 @@ public class Createur {
 	}
 
 	public ArbreFeuillus creerFeuillu() {
-		return new ArbreFeuillus(EGenreArbre.CHENE, 100, 50, null);
+		return new ArbreFeuillus(EGenreArbre.CHENE, 100, 50, EEtatFeuille.VERT);
 	}
 
 	public ArbreFruitier creerFruitier() {
