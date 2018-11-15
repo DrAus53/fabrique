@@ -49,10 +49,11 @@ public class Jardin extends JFrame {
 	public static void main(String[] args) {		
 		CreateurVue instance = new CreateurVue();
 		Createur inst = new Createur();
+		for(int i=0;i<1000;i++) {
 		Jardin.getInstance().getPanneauJardin()
-		.ajouterVueArbre(
-				
+		.ajouterVueArbre(	
 				instance.creerVue(VueFeuillus.class,inst.creerArbre(ArbreFeuillus.class)));
+		}
 	}
 
 }
