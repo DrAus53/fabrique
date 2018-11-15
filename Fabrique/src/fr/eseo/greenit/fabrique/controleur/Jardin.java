@@ -16,6 +16,8 @@ import fr.eseo.greenit.fabrique.vue.VueArbre;
 import fr.eseo.greenit.fabrique.vue.VueConifere;
 import fr.eseo.greenit.fabrique.vue.VueFeuillus;
 import fr.eseo.greenit.fabrique.vue.VueFruitier;
+import src.fr.eseo.greenit.nopattern.model.EEtatPousse;
+import src.fr.eseo.greenit.nopattern.model.EGenreArbre;
 
 
 
@@ -54,6 +56,12 @@ public class Jardin extends JFrame {
 		.ajouterVueArbre(	
 				instance.creerVue(VueFeuillus.class,inst.creerArbre(ArbreFeuillus.class)));
 		}
+		
+		for(int i=0;i<1000;i++) {
+			Jardin.getInstance().getPanneauJardin()
+			.ajouterVueArbre(	
+					instance.creerVue(VueConifere.class,inst.creerArbre(ArbreConifere.class)));
+			}
 	}
 
 }

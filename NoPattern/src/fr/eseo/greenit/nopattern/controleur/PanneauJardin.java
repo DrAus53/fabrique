@@ -23,14 +23,11 @@ public class PanneauJardin extends JPanel{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-
-	
 	public PanneauJardin(int largeur, int hauteur){
 		this.setPreferredSize(new Dimension(largeur,hauteur));
 	}	
 
 	public void paintComponent(Graphics g){
-		
 		super.paintComponent(g);
 		Graphics2D g2D = (Graphics2D)g.create();
 		for(int i=0;i<100;i++) {
@@ -43,7 +40,6 @@ public class PanneauJardin extends JPanel{
 			}
 		g2D.dispose();
 	}
-	
 	public void openImage(BufferedImage image) {
 		getGraphics().drawImage(image, 0, 0, this);		
 	}
