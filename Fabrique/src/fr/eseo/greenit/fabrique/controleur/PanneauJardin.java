@@ -1,15 +1,12 @@
 package fr.eseo.greenit.fabrique.controleur;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+
+import fr.eseo.greenit.fabrique.vue.VueArbre;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JPanel;
-
-import fr.eseo.greenit.*;
-import fr.eseo.greenit.fabrique.vue.VueArbre;
 
 
 public class PanneauJardin extends JPanel{

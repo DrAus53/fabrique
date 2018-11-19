@@ -1,8 +1,8 @@
 package fr.eseo.greenit.fabrique.vue;
 
 import fr.eseo.greenit.fabrique.model.Arbre;
-import fr.eseo.greenit.fabrique.model.EEtatFeuille;
 import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
+import fr.eseo.greenit.fabrique.model.EEtatFeuille;
 
 import java.awt.*;
 

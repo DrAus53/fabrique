@@ -1,5 +1,5 @@
-package src.fr.eseo.greenit.nopattern.model;
+package fr.eseo.greenit.nopattern.model;
 
 public enum EEtatPousse {
-	COLONNE, CONE, FUSEAU, BOULE, BUISSON, ETALE, RAMPANT
+  COLONNE, CONE, FUSEAU, BOULE, BUISSON, ETALE, RAMPANT
 }

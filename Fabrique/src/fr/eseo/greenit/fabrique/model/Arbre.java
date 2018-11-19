@@ -2,17 +2,17 @@ package fr.eseo.greenit.fabrique.model;
 
 public abstract class Arbre {
 
-  public Arbre (EGenreArbre genre, int age, int hauteur) {
-    this.genre = genre.getName();
-    this.age = age;
-    this.hauteur = hauteur;
-  }
-
   private int hauteur;
 
   private int age;
 
   private String genre;
+
+  public Arbre(EGenreArbre genre, int age, int hauteur) {
+    this.genre = genre.getName();
+    this.age = age;
+    this.hauteur = hauteur;
+  }
 
   public int getHauteur() {
     return hauteur;

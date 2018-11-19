@@ -1,9 +1,8 @@
 package fr.eseo.greenit.fabrique.vue;
 
 import fr.eseo.greenit.fabrique.model.Arbre;
-import fr.eseo.greenit.fabrique.model.EEtatFeuille;
-import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
 import fr.eseo.greenit.fabrique.model.ArbreFruitier;
+import fr.eseo.greenit.fabrique.model.EEtatFeuille;
 
 import java.awt.*;
 
@@ -15,7 +14,7 @@ public class VueFruitier extends VueArbre {
 
   public void affiche(Graphics2D g2D) {
     ArbreFruitier arbreFruitiers = (ArbreFruitier) getArbre();
-    //on récupère les attributs
+    //on rï¿½cupï¿½re les attributs
     int largeur = arbreFruitiers.getAge();
     int hauteur = arbreFruitiers.getHauteur();
 
@@ -31,10 +30,12 @@ public class VueFruitier extends VueArbre {
     }
 
     g2D.setColor(couleurFeuilles);
-    g2D.fillOval(this.getX(), this.getY(), hauteur/2, largeur);
-    Color couleurTronc=Color.BLACK;
+    g2D.fillOval(this.getX(), this.getY(), hauteur / 2, largeur);
+    Color couleurTronc = Color.BLACK;
     g2D.setColor(couleurTronc);
     //g2D.fillRect(this.getX(),this.getY(), hauteur, largeur);
-  
-  };
+
+  }
+
+  ;
 }

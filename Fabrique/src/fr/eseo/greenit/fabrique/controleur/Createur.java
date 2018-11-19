@@ -9,35 +9,35 @@ import fr.eseo.greenit.fabrique.model.EGenreArbre;
 
 public class Createur {
 
-	public Arbre creerArbre(Class<? extends Arbre> classe) {
+  public Arbre creerArbre(Class<? extends Arbre> classe) {
 
-		String nomClasse = classe.getSimpleName();
-		Arbre arbre = null;
-		System.out.println("he"+nomClasse);
-		switch (nomClasse) {
-		case "ArbreConifere":
-			arbre = creerConifere();
-			break;
-		case "ArbreFeuillus":
-			arbre = creerFeuillu();
-			break;
-		case "ArbreFruitier":
-			arbre = creerFruitier();
-			break;
-		}
-		return arbre;
-	}
+    String nomClasse = classe.getSimpleName();
+    Arbre arbre = null;
+    System.out.println("he" + nomClasse);
+    switch (nomClasse) {
+      case "ArbreConifere":
+        arbre = creerConifere();
+        break;
+      case "ArbreFeuillus":
+        arbre = creerFeuillu();
+        break;
+      case "ArbreFruitier":
+        arbre = creerFruitier();
+        break;
+    }
+    return arbre;
+  }
 
-	public ArbreConifere creerConifere() {
-		return new ArbreConifere(EGenreArbre.CEDRE, 100, 200, null);
-	}
+  public ArbreConifere creerConifere() {
+    return new ArbreConifere(EGenreArbre.CEDRE, 100, 200, null);
+  }
 
-	public ArbreFeuillus creerFeuillu() {
-		return new ArbreFeuillus(EGenreArbre.CHENE, 100, 50, EEtatFeuille.VERT);
-	}
+  public ArbreFeuillus creerFeuillu() {
+    return new ArbreFeuillus(EGenreArbre.CHENE, 100, 50, EEtatFeuille.VERT);
+  }
 
-	public ArbreFruitier creerFruitier() {
-		return new ArbreFruitier(EGenreArbre.COCOTIER, 50, 100, null, null);
-	}
-	
+  public ArbreFruitier creerFruitier() {
+    return new ArbreFruitier(EGenreArbre.COCOTIER, 50, 100, null, null);
+  }
+
 }

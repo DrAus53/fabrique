@@ -1,4 +1,4 @@
-package src.fr.eseo.greenit.nopattern.model;
+package fr.eseo.greenit.nopattern.model;
 
 public class ArbreFruitier extends ArbreFeuillus {
 

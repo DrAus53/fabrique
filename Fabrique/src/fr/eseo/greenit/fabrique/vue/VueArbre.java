@@ -7,7 +7,9 @@ import java.awt.*;
 public abstract class VueArbre {
 
   protected final Arbre arbre;
+
   private final int x;
+
   private final int y;
 
   public VueArbre(Arbre arbre, int x, int y) {

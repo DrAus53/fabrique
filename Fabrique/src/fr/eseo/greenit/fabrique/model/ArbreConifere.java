@@ -2,47 +2,50 @@ package fr.eseo.greenit.fabrique.model;
 
 public class ArbreConifere extends Arbre {
 
-	private String genre;
-	private int age;
-	private int hauteur;
-	private EEtatPousse croissance;
-	
+  private String genre;
 
-	public ArbreConifere(EGenreArbre genre, int age, int hauteur, EEtatPousse croissance) {
-		super(genre, age, hauteur);
-		this.croissance = croissance;
-	}
+  private int age;
 
-	public String getGenre() {
-		return genre;
-	}
+  private int hauteur;
 
-	public void setGenre(String genre) {
-		this.genre = genre;
-	}
+  private EEtatPousse croissance;
 
-	public int getHauteur() {
-		return hauteur;
-	}
 
-	public void setHauteur(int hauteur) {
-		this.hauteur = hauteur;
-	}
+  public ArbreConifere(EGenreArbre genre, int age, int hauteur, EEtatPousse croissance) {
+    super(genre, age, hauteur);
+    this.croissance = croissance;
+  }
 
-	public int getAge() {
-		return age;
-	}
+  public String getGenre() {
+    return genre;
+  }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
-	
-	public EEtatPousse getCroissance() {
-		return croissance;
-	}
+  public void setGenre(String genre) {
+    this.genre = genre;
+  }
 
-	public void setCroissance(EEtatPousse croissance) {
-		this.croissance = croissance;
-	}
+  public int getHauteur() {
+    return hauteur;
+  }
+
+  public void setHauteur(int hauteur) {
+    this.hauteur = hauteur;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
+
+  public EEtatPousse getCroissance() {
+    return croissance;
+  }
+
+  public void setCroissance(EEtatPousse croissance) {
+    this.croissance = croissance;
+  }
 
 }
