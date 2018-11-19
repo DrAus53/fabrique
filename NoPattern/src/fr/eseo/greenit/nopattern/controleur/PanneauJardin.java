@@ -26,11 +26,11 @@ public class PanneauJardin extends JPanel {
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
     Graphics2D g2D = (Graphics2D) g.create();
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
       VueFeuillus f = new VueFeuillus(new ArbreFeuillus(EGenreArbre.CHENE, i * 10 + 50, i * 10 + 50, EEtatFeuille.VERT), 50, 50);
       f.affiche(g2D);
     }
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
       VueConifere f = new VueConifere(new ArbreConifere(EGenreArbre.CHENE, i * 10 + 50, i * 10 + 50, EEtatPousse.BUISSON, EEtatFeuille.VERT), 50, 50);
       f.affiche(g2D);
     }
