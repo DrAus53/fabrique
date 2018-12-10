@@ -3,7 +3,6 @@ package fr.eseo.greenit.fabrique.controleur;
 import fr.eseo.greenit.fabrique.model.Arbre;
 import fr.eseo.greenit.fabrique.model.ArbreConifere;
 import fr.eseo.greenit.fabrique.model.ArbreFeuillus;
-import fr.eseo.greenit.fabrique.model.ArbreFruitier;
 import fr.eseo.greenit.fabrique.model.EEtatFeuille;
 import fr.eseo.greenit.fabrique.model.EGenreArbre;
 
@@ -21,9 +20,6 @@ public class Createur {
       case "ArbreFeuillus":
         arbre = creerFeuillu();
         break;
-      case "ArbreFruitier":
-        arbre = creerFruitier();
-        break;
     }
     return arbre;
   }
@@ -34,10 +30,6 @@ public class Createur {
 
   public ArbreFeuillus creerFeuillu() {
     return new ArbreFeuillus(EGenreArbre.CHENE, 100, 50, EEtatFeuille.VERT);
-  }
-
-  public ArbreFruitier creerFruitier() {
-    return new ArbreFruitier(EGenreArbre.COCOTIER, 50, 100, null, null);
   }
 
 }

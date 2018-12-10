@@ -4,7 +4,6 @@ import fr.eseo.greenit.fabrique.model.Arbre;
 import fr.eseo.greenit.fabrique.vue.VueArbre;
 import fr.eseo.greenit.fabrique.vue.VueConifere;
 import fr.eseo.greenit.fabrique.vue.VueFeuillus;
-import fr.eseo.greenit.fabrique.vue.VueFruitier;
 
 public class CreateurVue {
 
@@ -19,9 +18,6 @@ public class CreateurVue {
       case "VueFeuillus":
         vueArbre = creerFeuillu(arbre);
         break;
-      case "VueFruitier":
-        vueArbre = creerFruitier(arbre);
-        break;
     }
     return vueArbre;
   }
@@ -32,10 +28,6 @@ public class CreateurVue {
 
   public VueFeuillus creerFeuillu(Arbre arbre) {
     return new VueFeuillus(arbre, 50, 50);
-  }
-
-  public VueFruitier creerFruitier(Arbre arbre) {
-    return new VueFruitier(arbre, 100, 100);
   }
 
 }
